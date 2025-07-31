@@ -4,19 +4,24 @@ Projeto desenvolvido como parte do **Desafio de Código - Criando um Sistema Ban
 
 ## 📌 Descrição
 
-O projeto consiste na construção de um sistema bancário simples em Python, com operações básicas como **depósito**, **saque** e **visualização de extrato**. Este desafio tem como objetivo exercitar os conceitos de variáveis, estruturas condicionais, loops e manipulação de strings.
+Este projeto simula um sistema bancário simples, utilizando **Python puro**, com suporte a múltiplos usuários e contas. Ele permite **operações de depósito, saque e extrato**, além de funcionalidades adicionais como **cadastro de usuários**, **criação de contas vinculadas por CPF** e **listagem de contas registradas**.
 
 ---
 
 ## 🛠️ Funcionalidades
 
+- [x] **Cadastro de Usuário**: Registra o CPF, nome, endereço e data de nascimento.
+- [x] **Criação de Conta Bancária**:
+  - Vinculada a um usuário existente via CPF.
+  - Cada conta possui agência, número e senha.
 - [x] **Depósito**: Permite adicionar saldo à conta, desde que o valor seja positivo.
-- [x] **Saque**: 
+- [x] **Saque**:
   - Limite diário de **3 saques**;
-  - Cada saque deve ser de, no máximo, **R$ 500,00**;
-  - O saque é permitido apenas se houver saldo suficiente.
-- [x] **Extrato**: Exibe o histórico de transações realizadas (depósitos e saques).
-- [x] **Sair**: Finaliza o programa com uma mensagem de agradecimento.
+  - Cada saque limitado a **R$ 500,00**;
+  - Só é possível sacar se houver saldo suficiente.
+- [x] **Extrato**: Mostra o histórico de transações da conta (depósitos e saques).
+- [x] **Listagem de Contas**: Exibe todas as contas cadastradas e os usuários correspondentes.
+- [x] **Sair**: Encerra o programa com uma mensagem de agradecimento.
 
 ---
 
@@ -28,39 +33,10 @@ O projeto consiste na construção de um sistema bancário simples em Python, co
 
 ## ▶️ Como Executar
 
-1. Certifique-se de ter o **Python** instalado em sua máquina.
+1. Certifique-se de ter o **Python** instalado.
 2. Clone este repositório ou copie o código-fonte.
 3. Salve o arquivo como `sistema_bancario.py`.
-4. Execute o script:
+4. Execute no terminal com:
 
 ```bash
 python sistema_bancario.py
-```
-
----
-
-## 📷 Demonstração
-
-```
-======= Sistema Bancário =======
-[D] Depositar
-[S] Sacar
-[E] Extrato
-[Q] Sair
-=================================
-Obrigado por utilizar nosso sistema bancário!
-```
-
----
-
-## ✍️ Autor
-
-Desenvolvido por **Wendell Paim Souza**  
-🔗 [LinkedIn](https://www.linkedin.com/in/wendellpaim)  
-🔗 [GitHub](https://github.com/wendellpaim)
-
----
-
-## 🏁 Considerações Finais
-
-Este projeto foi uma excelente oportunidade para reforçar a lógica de programação em Python, simulando situações reais de operações bancárias. O código pode ser expandido futuramente com funcionalidades como autenticação de usuários, armazenamento de dados e interface gráfica.
